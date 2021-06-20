@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Splunk Alerts and such</title>
+        <script src='static/js/alerts.js'></script>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <!-- note this does not display the result. that's a bit more work -->
+                    <th>sid</th>
+                    <th>result</th>
+                    <th>search name</th>
+                    <th>owner</th>
+                    <th>app</th>
+                </tr>
+            </thead>
+            <tbody id='alerttable'>
+            </tbody>
+        </table>
+        <script>getalerts()</script>
+    </body>
+</html>
